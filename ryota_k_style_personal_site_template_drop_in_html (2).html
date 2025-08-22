@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Rahul Kumar | Portfolio</title>
+  <meta name="description" content="Personal website — social links, about, CVE list, blog and contact." />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    :root {
+      --bg1: #ffd1a8; --bg2: #c1f7d5; --bg3: #bcd4ff;
+      --ink: #1c1c1c; --muted: #555; --accent: #e85d75;
+      --border: #d0d0d0; --card: #ffffffcc; --dash: #9e9e9e;
+      --link: #e85d75; --link-hover: #b73e55;
+      --shadow: 0 10px 30px rgba(0,0,0,.08); --radius: 22px;
+    }
+    body {margin:0;font-family:'Nunito',sans-serif;color:var(--ink);
+      background:linear-gradient(120deg,var(--bg1),var(--bg2),var(--bg3));
+      background-attachment:fixed;}
+    .wrap{max-width:880px;margin:48px auto;padding:28px;background:var(--card);
+      backdrop-filter:blur(6px);border-radius:var(--radius);box-shadow:var(--shadow);
+      border:1px solid var(--border);}
+    header{display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap;}
+    .brand{font-size:42px;font-weight:800;}
+    .brand-underline{margin-top:4px;border-bottom:4px dashed var(--dash);width:220px;}
+    nav{display:flex;gap:18px;font-weight:700;flex-wrap:wrap;}
+    nav a{text-decoration:none;color:var(--ink);}
+    nav a:hover{color:var(--accent);}
+    .avatar{width:64px;height:64px;border-radius:50%;object-fit:cover;}
+    h2{font-size:28px;margin:28px 0 12px;}
+    p{line-height:1.8;margin:8px 0;}
+    .social-icons{display:flex;gap:16px;font-size:28px;margin-top:12px;}
+    .social-icons a{color:var(--ink);transition:.3s;}
+    .social-icons a:hover{color:var(--accent);}
+    a{color:var(--link);text-decoration:underline dotted;}
+    a:hover{color:var(--link-hover);}
+    .hr{height:1px;background:var(--border);margin:24px 0;}
+    footer{margin-top:36px;font-size:14px;color:var(--muted);text-align:center;}
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <header>
+      <div style="display:flex;align-items:center;gap:14px;">
+        <img class="avatar" src="images/bg.jpg" alt="Logo" />
+        <div>
+          <div class="brand">Rahul Kr D</div>
+          <div class="brand-underline"></div>
+          <nav>
+            <a href="#about">About</a>
+            <a href="#cve">CVE</a>
+            <a href="#blog">Blog</a>
+            <a href="#contact">Contact</a>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <section id="social" style="margin-top:20px;">
+      <h2>Connect with Me</h2>
+      <div class="social-icons">
+        <a href="mailto:rahulkrdas705@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+        <a href="https://www.facebook.com/rahulkrd6/" target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a>
+        <a href="https://www.instagram.com/rahulkrd6" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://x.com/MrRahulKrDas1" target="_blank" title="X (Twitter)"><i class="fab fa-x-twitter"></i></a>
+        <a href="https://www.linkedin.com/in/rahul-kr-d-303b2b268" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/rahulkrd6" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+      </div>
+    </section>
+
+    <section id="about">
+      <h2>About</h2>
+      <p>Hello! I'm Rahul Kr D, a student passionate about creating responsive and user-friendly websites. I enjoy learning new technologies and applying them to build efficient and scalable solutions.</p>
+    </section>
+
+    <div class="hr"></div>
+
+    <section id="cve">
+      <h2>CVE</h2>
+      <p>List your notable CVEs or advisories here.</p>
+    </section>
+
+    <section id="blog">
+      <h2>Blog</h2>
+      <p>Coming soon! Articles about web development and security research.</p>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:rahulkrdas705@gmail.com">rahulkrdas705@gmail.com</a></p>
+    </section>
+
+    <footer>
+      © <span id="year"></span> Rahul Kr D | Built with ❤
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById('year').textContent=new Date().getFullYear();
+  </script>
+</body>
+</html>
